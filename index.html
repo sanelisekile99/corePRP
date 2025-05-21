@@ -164,6 +164,62 @@
             box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
         }
         
+        /* Team/Management styles */
+        .team {
+            background-color: var(--light-blue);
+            padding: 5rem 2rem;
+        }
+        
+        .team-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 2rem;
+            margin-top: 2rem;
+        }
+        
+        .team-member {
+            background-color: var(--white);
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+            transition: transform 0.3s;
+        }
+        
+        .team-member:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
+        }
+        
+        .member-image {
+            height: 250px;
+            background-color: var(--light-gold);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 5rem;
+            color: var(--navy-blue);
+        }
+        
+        .member-info {
+            padding: 1.5rem;
+            text-align: center;
+        }
+        
+        .member-info h3 {
+            color: var(--navy-blue);
+            margin-bottom: 0.5rem;
+        }
+        
+        .member-role {
+            color: var(--gold);
+            font-weight: 500;
+            margin-bottom: 1rem;
+        }
+        
+        .member-info p {
+            font-size: 0.9rem;
+        }
+        
         .services {
             background-color: var(--light-blue);
         }
@@ -454,6 +510,7 @@
                 <ul>
                     <li><a href="#home">Home</a></li>
                     <li><a href="#about">About</a></li>
+                    <li><a href="#team">Our Team</a></li>
                     <li><a href="#services">Services</a></li>
                     <li><a href="#why-us">Why Us</a></li>
                     <li><a href="#contact">Contact</a></li>
@@ -485,6 +542,48 @@
                 </div>
                 <div class="about-image">
                     <img src="groupcccccccc.jpg" alt="CorePRP Team">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="team" class="section team">
+        <div class="container">
+            <div class="section-title">
+                <h2>Ownership & Management</h2>
+            </div>
+            <div class="team-grid">
+                <div class="team-member">
+                    <div class="member-image">👩🏾</div>
+                    <div class="member-info">
+                        <h3>Mr P Mcanyana</h3>
+                        <p class="member-role">Founder & Managing Director</p>
+                        <p>Is a founder and the Director of CorePRP</p>
+                    </div>
+                </div>
+                <div class="team-member">
+                    <div class="member-image">👨🏽</div>
+                    <div class="member-info">
+                        <h3>Miss S Dlamini</h3>
+                        <p class="member-role">Public Relations Officer</p>
+                        <p>Responsible for client management act</p>
+                    </div>
+                </div>
+                <div class="team-member">
+                    <div class="member-image">👩🏻</div>
+                    <div class="member-info">
+                        <h3>Miss A Hadebe</h3>
+                        <p class="member-role">Content Strategist</p>
+                        <p>Miss Hadebe oversees all creative content and brand strategy initiatives at CorePRP.</p>
+                    </div>
+                </div>
+                <div class="team-member">
+                    <div class="member-image">👨🏾</div>
+                    <div class="member-info">
+                        <h3>Mr B Manyali</h3>
+                        <p class="member-role">Client Relation Assistant</p>
+                        <p>Mr Manyali manages day-to-day operations and client relationships at CorePRP.</p>
+                    </div>
                 </div>
             </div>
         </div>
@@ -629,6 +728,7 @@
                 <ul>
                     <li><a href="#home">Home</a></li>
                     <li><a href="#about">About Us</a></li>
+                    <li><a href="#team">Our Team</a></li>
                     <li><a href="#services">Services</a></li>
                     <li><a href="#contact">Contact</a></li>
                 </ul>
